@@ -1,0 +1,3 @@
+method,input_catalogues,apparent_V_modulus_mag,apparent_V_modulus_err_mag,E_BV_mag,E_BV_err_mag,R_V,A_V_mag,true_modulus_mag,true_modulus_err_mag,cluster_parallax_mas,cluster_parallax_err_mas,distance_pc,distance_err_pc,n_stars
+apparent_V_distance_modulus,RGB_all.csv + RC_all.csv,13.51,0.06,0.14,0.02,3.1,0.434,13.076,0.0862786184,,,4122.873407,163.856295,44
+weighted_median_Lindegren_parallax,RGB_all.csv + RC_all.csv,,,,,,,,,0.2418534499,0.0034667118,4134.735313,59.845235,44

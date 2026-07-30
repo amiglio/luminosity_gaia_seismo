@@ -1,0 +1,13 @@
+,value
+parallax_mas,0.24185344992953428
+parallax_err_mas,0.003466711798445987
+parallax_mc_p16_mas,0.2372405133291248
+parallax_mc_p50_mas,0.2407003260848672
+parallax_mc_p84_mas,0.24417393692601677
+distance_pc,4134.735313022647
+distance_err_pc,59.84523513406202
+distance_mc_p16_pc,4095.4411949239047
+distance_mc_p50_pc,4154.5436031040845
+distance_mc_p84_pc,4215.131665192029
+n_reference_stars,44.0
+n_used_stars,44.0
