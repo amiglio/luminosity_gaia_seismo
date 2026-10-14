@@ -1,0 +1,7 @@
+Evolutionary_state,Source,Catalogue_rows,Exact_KIC_Gaia_matches,Usable_source_values,Usable_masses,Missing_match_KIC,Phase_conflict_KIC
+RGB,Kepler numax,30,25,25,25,"2437325,2437496,2579142,2436824,2569935",2436814
+RGB,density Model B,30,29,29,28,2579142,
+RGB,density Model E,30,29,29,28,2579142,
+RC,Kepler numax,14,14,14,14,,
+RC,density Model B,14,14,14,14,,
+RC,density Model E,14,14,14,14,,

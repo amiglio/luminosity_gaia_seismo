@@ -73,6 +73,34 @@ scalar `np.can_cast` incompatibility in `zero_point` 0.0.1 with NumPy 2.x.
 `bcall` writes temporary files inside its own installation directory. Do not run
 two copies of the notebook concurrently.
 
+## Mass inference
+
+After the fixed-distance-modulus RGB and RC luminosity catalogues have been
+created, run:
+
+```bash
+python infer_masses.py
+```
+
+This script requires exact agreement in both KIC and Gaia DR3 ID when matching
+the luminosity catalogues to `Kepler_clusters.data` and the Model B/Model E
+detailed-modelling density tables. It keeps the two density models separate and
+computes masses from:
+
+```text
+M_numax/Msun = (numax/numax_sun) (L/Lsun) (Teff/Teff_sun)^(-7/2)
+M_rho/Msun   = (rho/rho_sun) (L/Lsun)^(3/2) (Teff/Teff_sun)^(-6)
+```
+
+The default solar references are `numax_sun = 3090 microHz` and
+`Teff_sun = 5772 K`. The script also evaluates a `Teff +/- 50 K` systematic while
+holding luminosity, numax, and density fixed. Outputs, cross-match diagnostics,
+plots, and a Markdown report are saved under `outputs/mass_inference/`. The
+summary includes arithmetic means, medians, inverse-variance weighted means,
+three-MAD outlier diagnostics, results with candidates retained and removed,
+the shared-distance sensitivity, RGB/RC comparisons, and RGB mass-versus-Ks
+trend tests.
+
 ## Scientific conventions made explicit
 
 - `BC_1` is treated as the 2MASS Ks bolometric correction, matching the originals.
